@@ -1,0 +1,1136 @@
+/*==================== Google Fonts ================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*==================== Basic Edit ==================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding-bottom: 10rem !important;
+}
+
+.text-header {
+    text-align: center;
+    margin: 10rem auto 5rem;
+    padding: 0 25rem;
+}
+
+.text-header h1 {
+    font-size: 3.2rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+.text-header p {
+    font-size: 1.6rem;
+    color: #777;
+    font-weight: 400;
+    text-transform: none;
+    padding: 0 2rem 2rem;
+}
+
+
+/*==================== Header Section ================*/
+
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 168, 255);
+    background: linear-gradient(rgba(0, 168, 255, 0.4), rgba(0, 168, 255, 0.4)), url('../img/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+#home .navbar .container {
+    padding-bottom: 0 !important;
+}
+
+/*---------------------- Navigation Menu -------------------*/
+
+.navbar {
+    background: rgba(115, 179, 230, 0.6) !important;
+}
+
+.navbar-brand {
+    color: #f8fbfe !important;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    color: #f8fbfe !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    margin-left: 2.5rem !important;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #b400ff !important
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+/*-------------------- Hero Section -----------------*/
+
+.hero {
+    text-align: center;
+    padding: 18rem 15rem 10rem;
+    margin: 0 !important;
+    margin-top: -6.15rem;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.hero p {
+    color: #eee;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+
+.hero .btn {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding: 1rem 3.4rem;
+    border: 1px solid #fff;
+    margin-left: 2rem;
+    border-radius: 8rem;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: #fff;
+    color: #3ccdbb;
+    font-weight: 600 !important;
+    transition: 0.5s ease-in-out;
+    box-shadow: 1px 2px 15px -1px black;
+}
+
+
+/*======================= About Section ==================*/
+
+.about-cell {
+    text-align: center;
+    padding: 4rem 4rem;
+    border: none;
+    /* margin-left: 1rem; */
+    transition: all 0.5s ease;
+}
+
+.about-cell i {
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    color: #53abdf
+}
+
+.about-cell h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.about-cell p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+
+}
+
+.about-cell:hover {
+    cursor: text;
+    transform: translateY(-2rem);
+    box-shadow: 0px 5px 15px -2px black;
+    border-radius: 1rem;
+}
+
+
+/*========================== Services Section =======================*/
+
+/*--------------------- Main Service Section -------------*/
+/*----------------- Progress Bar -----------------*/
+
+.service-cell-1 {
+    padding-left: 4rem;
+}
+
+.service-cell-1 h3 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+/* Subcells */
+
+.service-subcell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 6rem !important;
+}
+
+.service-subcell .icon {
+    font-size: 3.4rem;
+    color: #53abdf;
+    padding: 0 4rem;
+}
+
+.service-subcell .text h3 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+}
+
+.service-subcell .text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/*-------------- Awards Service Section --------------*/
+
+.awards {
+    background: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/service-bg.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10rem 0 6rem !important;
+}
+
+.awards .container {
+    padding-bottom: 2rem !important;
+}
+
+.awards-header {
+    padding: 0 8rem 4rem;
+    text-align: center;
+}
+
+.awards-header h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+
+.awards-counter {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-counter .counter {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.awards-counter h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+}
+
+
+/*======================== Price Section =====================*/
+
+#price {
+    position: relative;
+}
+
+#price::after {
+    clip-path: polygon(0% 0, 120% 0%, 00% 100%, 0% 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #8AB5F6;
+}
+
+#price .text-header {
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 10rem 25rem 0;
+}
+
+.price-card {
+    text-align: center;
+    margin: 0 4.5rem 0 0 !important;
+    width: 35rem !important;
+    border: 1px solid #ccc;
+    padding: 0;
+    border-radius: .5rem;
+    background: #fff;
+    transition: all 0.5s ease;
+}
+
+.price-card:last-child {
+    margin-right: 0 !important;
+}
+
+.price-card h1 {
+    color: #000;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2.5rem 0 2rem;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.price-card p {
+    font-size: 1.6rem;
+    color: #111;
+    font-weight: 400;
+}
+
+.price-card .text-muted {
+    color: #ccc !important;
+}
+
+.price-card .first {
+    padding-top: 1rem;
+}
+
+.price-card .last {
+    padding-bottom: 2rem;
+}
+
+.price-card p span {
+    font-size: 3.4rem;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.price-card .btn {
+    color: #3ccdbb;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1rem 3.4rem;
+    border: 1px solid #3ccdbb;
+    margin: 1rem 0 2rem;
+    border-radius: 8rem;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.price-card:hover h1,
+.price-card:hover span {
+    color: #3ccdbb;
+}
+
+.price-card:hover {
+    transform: translateY(-2rem);
+    box-shadow: 0px 5px 15px -2px black;
+}
+
+.price-card:hover .btn {
+    background: #3ccdbb;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/*================== Feedback Section =================*/
+
+#feedback {
+    position: relative;
+}
+
+/*-------------- Card Slider -----------*/
+
+.card-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.feedbacks {
+    width: 31.5rem !important;
+    margin: 0 3rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem 2rem 3rem;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 12px -2px black;
+    transition: all 0.5s ease;
+}
+
+.feedbacks:hover {
+    background: #16c9f6;
+}
+
+.feedbacks img {
+    height: 10rem;
+    width: 10rem;
+    border: 4px solid #ccc;
+    margin: 1rem auto 2rem;
+}
+
+.feedbacks i {
+    position: absolute;
+    top: 8rem;
+    left: 17rem;
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem;
+    background: #16c9f6;
+    border-radius: 100%;
+}
+
+.feedbacks p {
+    font-size: 1.4rem;
+    color: #777;
+    font-weight: 600;
+}
+
+.feedbacks h3 {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 2rem 0 .5rem;
+}
+
+.slider-btn-left {
+    position: absolute;
+    left: 16.5rem;
+    top: 34rem;
+    padding: 1rem;
+    background: #00ccffb6;
+    font-size: 2.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-btn-right {
+    position: absolute;
+    right: 16.5rem;
+    top: 34rem;
+    padding: 1rem;
+    background: #00ccffb6;
+    font-size: 2.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -6rem;
+    left: 52.2rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 2rem 0
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+}
+
+.slick-dots button {
+    display: block;
+    width: 3rem;
+    height: .5rem;
+    padding: 0;
+    border: none;
+    background: #33afce8a;
+    text-indent: -9999px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.slick-dots li.slick-active button {
+    background: #00ccff;
+}
+
+
+/*================= Contact Section ================*/
+
+.form {
+    padding: 0rem 15rem 2rem;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact::after {
+    clip-path: polygon(80% 0, 100% 0%, 100% 100%, 0% 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #8AB5F6;
+}
+
+#contact .text-header {
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 10rem 25rem 0;
+}
+
+.form input,
+.form textarea {
+    padding: 0.8rem 1rem;
+    margin: 0 0 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black
+}
+
+.form .btn {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding: 1rem 3.4rem;
+    border: 1px solid #fff;
+    display: flex;
+    margin: 3rem auto 0;
+    border-radius: 8rem;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.form .btn:hover {
+    background: #fff;
+    color: #3ccdbb;
+    font-weight: 600 !important;
+    transition: 0.5s ease-in-out;
+    box-shadow: 1px 2px 15px -1px black;
+}
+
+/*--------------------- Subscribe -----------------*/
+
+.subscribe {
+    padding: 5rem 25rem 10rem;
+}
+
+.subscribe .text-header {
+    margin: 3rem auto 5rem !important;
+    padding: 5rem 15rem 0 !important;
+}
+
+.subscribe .text-header h1 {
+    font-size: 2.6rem;
+}
+
+.subscribe .input-group input {
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+}
+
+.subscribe .input-group .btn {
+    padding: 0 5rem 0 1.5rem;
+    font-size: 1.6rem;
+    border-top-right-radius: 5rem !important;
+    border-bottom-right-radius: 5rem !important;
+    background: #5c9dff;
+    color: #fff;
+}
+
+
+/* Footer Section */
+
+footer {
+    background: #3694ff;
+    padding: 8rem 0 3rem;
+}
+
+footer .container {
+    padding-bottom: 0 !important;
+}
+
+footer .row {
+    padding-bottom: 5rem;
+}
+
+footer .row h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 2px 4px black;
+    padding-bottom: 1rem;
+}
+
+footer .row p {
+    font-size: 1.4rem;
+    color: white;
+    padding-right: 4rem;
+    font-weight: 400 !important;
+    text-align: justify;
+}
+
+footer .row ul {
+    list-style-type: none;
+    padding: 0 30rem 0 0;
+}
+
+footer .row ul a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .row ul a li {
+    padding-bottom: 0.5rem;
+}
+
+footer .row ul a li:hover {
+    text-decoration: underline;
+    text-shadow: 2px 1px 2px black;
+}
+
+footer .row a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer .row a i {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+footer .row a i:hover {
+    color: #444;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer p span i {
+    color: hotpink;
+    font-size: 2;
+}
+
+footer p .author {
+    color: rgb(214, 60, 86);
+}
+
+
+/*----------------- Horizontal Ruler ---------------------*/
+
+.divider {
+    width: 114rem;
+    margin: auto;
+}
+
+
+/* Back to Top Button */
+
+.back-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem 1.5rem;
+    background: rgb(214, 23, 214);
+    z-index: 999;
+    border-radius: 1.2rem;
+}
+
+.back-top:hover {
+    background: rgb(179, 0, 179);
+    box-shadow: 1px 2px 15px -1px black;
+    color: #000;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:500px) and (max-width:770px) {
+
+    html {
+        font-size: 8px;
+        overflow-x: hidden;
+    }
+
+    .text-header p {
+        font-size: 2rem;
+    }
+
+    .container {
+        max-width: 86.016rem !important;
+    }
+
+    .hero {
+        padding: 20rem 8.064rem 20.16rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 3rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        margin-top: 1.6rem;
+        margin-left: 0;
+    }
+
+    .nav-link:hover::after {
+        width: 0;
+    }
+
+    .text-header {
+        padding: 0;
+    }
+
+    #price .text-header {
+        padding: 13.44rem 0 0;
+    }
+
+    #contact .text-header {
+        padding: 13.44rem 0 0;
+    }
+
+    .form {
+        padding: 0 9.408rem 2.5rem;
+    }
+
+    .subscribe {
+        padding: 6.72rem 6.72rem 13.44rem;
+    }
+
+    .subscribe .text-header {
+        padding: 6.72rem 0 0 !important;
+    }
+
+    .about-cell {
+        margin-bottom: 2.5rem;
+    }
+
+    .about-cell p {
+        font-size: 2rem;
+    }
+
+    .service-cell-1 {
+        margin-bottom: 13.44rem;
+        max-width: 86.016rem !important;
+        overflow-x: hidden;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .service-cell-1 .progress-bar {
+        width: 86.016rem !important;
+    }
+
+    .service-subcell .text p {
+        font-size: 2rem;
+    }
+
+    .awards-header {
+        padding: 0 0 6.72rem;
+    }
+
+    .awards-counter {
+        margin-bottom: 9.408rem;
+    }
+
+    .price-card {
+        margin: 2.5rem auto !important;
+        padding: 0 !important;
+    }
+
+    .price-card:last-child {
+        margin: 2.5rem auto !important;
+    }
+
+    .feedbacks {
+        width: 80rem !important;
+        margin: 0 2.3788rem !important;
+    }
+
+    .slider-btn-right {
+        right: 19rem !important;
+    }
+
+    .slick-dots {
+        left: 29rem !important;
+        bottom: 20rem;
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
+
+    footer .row p {
+        font-size: 2rem;
+    }
+
+    .divider {
+        width: 60.48rem !important;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:360px) and (max-width:500px) {
+    html {
+        font-size: 7px;
+        overflow-x: hidden;
+    }
+
+    .text-header p {
+        font-size: 2rem;
+    }
+
+    .container {
+        max-width: 64rem !important;
+    }
+
+    .hero {
+        padding: 20rem 6rem 15rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 1.6rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .nav-link:hover::after {
+        width: 0;
+    }
+
+    .text-header {
+        padding: 0;
+    }
+
+    #price .text-header {
+        padding: 10rem 0 0;
+    }
+
+    #contact .text-header {
+        padding: 10rem 0 0;
+    }
+
+    .form {
+        padding: 0 7rem 2rem;
+    }
+
+    .subscribe {
+        padding: 5rem 5rem 10rem;
+    }
+
+    .subscribe .text-header {
+        padding: 5rem 0 0 !important;
+    }
+
+    .about-cell {
+        margin-bottom: 2rem;
+    }
+
+    .about-cell p {
+        font-size: 2rem;
+    }
+
+    .service-cell-1 {
+        margin-bottom: 10rem;
+        max-width: 64rem !important;
+    }
+
+    .service-cell-1 .progress-bar {
+        max-width: 64rem !important;
+    }
+
+    .service-subcell .text p {
+        font-size: 2rem;
+    }
+
+    .awards-header {
+        padding: 0 0 4rem;
+    }
+
+    .awards-counter {
+        margin-bottom: 5rem;
+    }
+
+    .price-card {
+        margin: 2rem auto !important;
+        padding: 0 !important;
+    }
+
+    .price-card:last-child {
+        margin: 2rem auto !important;
+    }
+
+    .feedbacks {
+        width: 59rem !important;
+        margin: 0 1.77rem !important;
+    }
+
+    .feedbacks p {
+        font-size: 2.4rem;
+    }
+
+    .slider-btn-right {
+        right: 16.5rem !important;
+    }
+
+    .slick-dots {
+        left: 18rem !important;
+        bottom: -6rem !important;
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
+
+    footer .row p {
+        font-size: 2rem;
+    }
+
+    .divider {
+        width: 45rem !important;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    html {
+        font-size: 5px;
+        overflow-x: hidden;
+    }
+
+    .text-header p {
+        font-size: 2.4rem;
+    }
+
+    .container {
+        max-width: 64.512rem !important;
+    }
+
+    .hero {
+        padding: 22.16rem 6.048rem 15.12rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 1.7rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .nav-link:hover::after {
+        width: 0;
+    }
+
+    .text-header {
+        padding: 0;
+    }
+
+    #price .text-header {
+        padding: 10rem 0 0;
+    }
+
+    #contact .text-header {
+        padding: 10.08rem 0 0;
+    }
+
+    .form {
+        padding: 0 7rem 2rem;
+    }
+
+    .subscribe {
+        padding: 5rem 5rem 10rem;
+    }
+
+    .subscribe .text-header {
+        padding: 5rem 0 0 !important;
+    }
+
+    .about-cell {
+        margin-bottom: 2rem;
+    }
+
+    .about-cell p {
+        font-size: 2.4rem;
+    }
+
+    .service-cell-1 {
+        margin-bottom: 10rem;
+        max-width: 64.512rem !important;
+        overflow-x: hidden;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .service-cell-1 .progress-bar {
+        max-width: 64.512rem !important;
+    }
+
+    .service-subcell .text p {
+        font-size: 2.4rem;
+    }
+
+    .awards-header {
+        padding: 0 0 4rem;
+    }
+
+    .awards-counter {
+        margin-bottom: 5rem;
+    }
+
+    .price-card {
+        margin: 2rem auto !important;
+        padding: 0 !important;
+    }
+
+    .price-card:last-child {
+        margin: 2rem auto !important;
+    }
+
+    .feedbacks {
+        width: 59.412rem !important;
+        margin: 0 1.78416rem !important;
+    }
+
+
+    .slider-btn-right {
+        right: 16.5rem !important;
+    }
+
+    .slick-dots {
+        left: 18rem !important;
+        bottom: -6rem !important;
+    }
+
+    footer p {
+        font-size: 2.4rem;
+    }
+
+    footer .row p {
+        font-size: 2.4rem;
+    }
+
+    .divider {
+        width: 45rem !important;
+    }
+
+}
