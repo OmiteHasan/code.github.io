@@ -10,7 +10,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 2000,
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed:2000,
         arrows: true,
         prevArrow:".slider-btn-left",
