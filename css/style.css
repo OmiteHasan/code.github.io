@@ -721,7 +721,7 @@ footer p .author {
 
 
 
-@media only screen and (min-width:500px) and (max-width:770px) {
+@media only screen and (min-width:770px) and (max-width:1024px) {
     html {
         font-size: 9px;
         overflow-x: hidden;
