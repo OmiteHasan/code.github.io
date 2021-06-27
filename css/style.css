@@ -721,7 +721,12 @@ footer p .author {
 
 
 
-
+@media only screen and (min-width:500px) and (max-width:770px) {
+    html {
+        font-size: 9px;
+        overflow-x: hidden;
+    }
+}
 
 
 
@@ -753,7 +758,7 @@ footer p .author {
     }
 
     .navbar-toggler-icon {
-        font-size: 3rem;
+        font-size: 2rem;
         color: black;
         font-weight: bold;
     }
